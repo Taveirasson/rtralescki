@@ -1,0 +1,36 @@
+Usado na parte esquerda da logo.
+
+Início do gradiente: #E6C976
+
+Meio: #C9A34A
+
+Fim do gradiente: #B17B2F
+
+Uso sugerido: Detalhes elegantes, botões em destaque, ícones, hover effects.
+
+2. Cinza Escuro
+Cor do bloco direito da logo.
+
+Hex: #4C4748
+
+Uso sugerido: Fundo de rodapé, cabeçalho, blocos de conteúdo.
+
+3. Cinza Médio/Claro
+
+Cor do texto "R TRALESCKI"
+
+Hex: #3A3939
+
+Uso sugerido: Títulos, textos de destaque.
+
+4. Cinza Claro
+Cor do texto "Arquitetura e Engenharia"
+
+Hex: #5C5C5C
+
+Uso sugerido: Texto do corpo, legendas.
+
+5. Branco
+Hex: #FFFFFF
+
+Uso sugerido: Fundo geral do site para contraste e leveza.

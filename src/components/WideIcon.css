@@ -1,0 +1,17 @@
+.wide-icon-section {
+    background-color: none;
+    width: 100%;
+    height: 100px;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .wide-icon-container {
+    width: 100%;
+  }
+  
+  .wide-icon-image {
+    width: 100%;
+    display: block;
+  }
+  

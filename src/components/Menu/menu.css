@@ -1,0 +1,112 @@
+.menu-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+  transition: transform 0.4s ease;
+}
+
+.menu-wrapper.at-top {
+  transform: translateY(0);
+}
+
+.menu-wrapper.scrolled {
+  transform: translateY(-130px);
+}
+
+.menu-top {
+  position: relative;
+  width: 100%;
+  min-width: 958px;
+  height: 130px;
+  max-height: 130px;
+  overflow: hidden;
+  object-position: 0% 75%;
+  background-color: #E6C976;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.3s ease, transform 0.4s ease;
+  z-index: -1;
+  pointer-events: none;
+
+  background-image: url(../../../public/assets/largePanel.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.menu-top.hidden {
+  opacity: 0;
+  transform: translateY(-100%);
+  pointer-events: none;
+}
+
+.menu-top.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.nav-logo {
+  position: absolute;
+  transform: translateX(-50%);
+  width: 100%;
+  max-width: 958px;
+  height: auto;
+  pointer-events: none;
+  user-select: none;
+}
+
+.menu-container {
+  position: relative;
+  left: 0;
+  width: 100%;
+  height: 80px;
+  background-color: #dedbda;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 40px;
+  z-index: 1000;
+  box-sizing: border-box;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  transition: top 0.4s ease, background-color 0.3s ease;
+}
+
+.menu-logo {
+  height: 100px;
+  width: auto;
+  cursor: pointer;
+}
+
+.menu-buttons {
+  display: flex;
+  gap: 70px;
+  flex: 1;
+  justify-content: center;
+}
+
+.menu-buttons button {
+  background: none;
+  border: none;
+  color: #3d3d3d;
+  font-weight: bold;
+  font-size: 17px;
+  cursor: pointer;
+  transition: color 0.3s ease, border-bottom 0.3s ease;
+  padding: 12px 25px;
+  white-space: nowrap;
+  overflow: hidden;
+  margin: 0 10px;
+}
+
+.menu-buttons button:hover {
+  color: #E6C976;
+}
+
+.menu-buttons button.active {
+  border-bottom: 5px solid #E6C976;
+  /* color: #E6C976; */
+  transition: color 0.3s ease, border-bottom 0.3s ease;
+}
