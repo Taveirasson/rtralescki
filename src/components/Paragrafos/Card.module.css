@@ -1,0 +1,23 @@
+.card {
+    background-color: var(--cor-fundo-claro);
+    border-radius: 12px;
+    box-shadow: 0 7px 12px rgba(0, 0, 0, 0.08);
+    padding: 2rem;
+    width: 100%;
+    max-width: auto;
+    min-height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    text-align: justify;
+    color: var(--cor-texto-claro);
+    font-size: 18px;
+    line-height: 1.8;
+  }
+
+  body.modo-escuro .card {
+    background-color: var(--cor-fundo-escuro);
+    color: var(--cor-texto-escuro);
+  }
+  

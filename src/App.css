@@ -1,3 +1,45 @@
 body {
   background-color: #fdfcfb;
 }
+
+html, body {
+  overflow-x: hidden;
+}
+
+.divMain {
+  display: flex; 
+  max-width: 100%;
+  align-self: center;
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
+  flex-direction: column; 
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+:root {
+  --cor-fundo-claro: #ffffff;
+  --cor-fundo-escuro: #121212;
+  --cor-texto-claro: #2a2a2a;
+  --cor-texto-escuro: #ffffff;
+  --cor-secundaria-clara: #E6C976;
+  --cor-secundaria-escura: #CBB26A;
+  --cor-borda-clara: #ccc;
+  --cor-borda-escura: #333;
+}
+
+/* Estilos do modo claro */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: var(--cor-fundo-claro);
+  color: var(--cor-texto-claro);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+body.modo-escuro {
+  background-color: var(--cor-fundo-escuro);
+  color: var(--cor-texto-escuro);
+}

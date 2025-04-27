@@ -1,6 +1,6 @@
 import React, { useEffect, useState, useRef } from "react";
 import './menu.css'
-
+import { handleWhatsAppClick } from "../../utils/whatsapp";
 
 const Menu: React.FC = () => {
   const [isTop, setIsTop] = useState(true);
@@ -36,17 +36,12 @@ const Menu: React.FC = () => {
         setActiveSection(currentSectionId);
       }
     };
-  
     window.addEventListener("scroll", handleScroll);
     handleScroll();
   
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
-  
-  
-  
-  
-  
+    
   const scrollToSection = (id: string) => {
     const section = document.getElementById(id);
     if (section) {
@@ -69,10 +64,19 @@ const Menu: React.FC = () => {
         <img className="menu-logo" src="/assets/Logo04.png" alt="Logo" onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })} />
         <div className="menu-buttons">
           <button className={activeSection === "sobre" ? "active" : ""} onClick={() => scrollToSection("sobre")}>SOBRE</button>
-          <button className={activeSection === "equipe" ? "active" : ""} onClick={() => scrollToSection("equipe")}>EQUIPE</button>
+          <button className={activeSection === "diferencial" ? "active" : ""} onClick={() => scrollToSection("diferencial")}>DIFERENCIAL</button>
           <button className={activeSection === "servicos" ? "active" : ""} onClick={() => scrollToSection("servicos")}>NOSSOS SERVIÇOS</button>
-          <button className={activeSection === "contato" ? "active" : ""} onClick={() => scrollToSection("contato")}>CONTATO</button>
+          {/* <button className={activeSection === "contato" ? "active" : ""} onClick={() => scrollToSection("contato")}>CONTATO</button> */}
         </div>
+        <div className="contato" onClick={() => handleWhatsAppClick()} style={{ cursor: 'pointer' }}>
+          <div className="whatsappIconWrapper">
+            <img src="/assets/whatsapp.svg" alt="WhatsApp" className="whatsappIcon" />
+          </div>
+          <div className="textos">
+            <span>Entre em contato</span>
+            <strong>(31) 99510-2050</strong>
+          </div>
+      </div>
       </nav>
     </div>
   </>
