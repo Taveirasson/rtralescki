@@ -1,0 +1,129 @@
+#exemplos {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.galeria-cards-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 2rem;
+    padding: 4rem 2rem;
+    background-color: #f9f9f9;
+    flex-wrap: wrap; /* Caso a tela fique pequena */
+  }
+  
+  .card-projeto {
+    width: 400px;
+    background-color: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0px 4px 15px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .card-projeto:hover {
+    transform: translateY(-10px);
+  }
+  
+  .card-projeto img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+  }
+  
+  .info-card {
+    padding: 1rem;
+    text-align: center;
+  }
+  
+  .info-card h2 {
+    font-size: 22px;
+    margin-bottom: 0.5rem;
+    color: #0B5C5A;
+  }
+  
+  .info-card p {
+    font-size: 18px;
+    color: #555;
+  }
+  
+
+  .esteira {
+    position: relative;
+    width: 100%;
+    height: 200px; 
+    overflow: hidden;
+    margin-top: 3rem;
+    background-color: #f9f9f9;
+  }
+  
+  .esteira-conteudo {
+    display: flex;
+    /* flex-direction: row; */
+    gap: 10px;
+    width: max-content;
+    animation: deslizar 40s linear infinite;
+    /* white-space: nowrap;  */
+  }
+  
+  @keyframes deslizar {
+    from {
+      transform: translateX(0%);
+    }
+    to {
+      transform: translateX(-50%);
+    }
+  }
+  
+  .cliente-item {
+    flex: 0 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 90%;
+    font-size: 1.2rem;
+    color: #0B5C5A;
+    background-color: white;
+    margin: 0 4px;
+    /* margin-top: 1px; */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    border-radius: 20%;
+  }
+
+  .cliente-item:hover{
+    transform: translateY(-10px);
+  }
+  
+  .cliente-item img{
+    width: 200px;
+    height: 90%;
+    border-radius: 20%;
+
+  }
+
+  .esteira::before,
+  .esteira::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 20px;
+    z-index: 2;
+    pointer-events: none;
+  }
+  
+  .esteira::before {
+    left: 0;
+    background: linear-gradient(to right, #f9f9f9, transparent);
+  }
+  
+  .esteira::after {
+    right: 0;
+    background: linear-gradient(to left, #f9f9f9, transparent);
+  }
+  

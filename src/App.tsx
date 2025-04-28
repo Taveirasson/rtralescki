@@ -5,6 +5,7 @@ import Sobre from './components/Sobre/Sobre';
 // import Equipe from './components/Equipe/Equipe';
 import Contato from './components/Contato/Contato';
 import Servicos from './components/Servicos/Servicos';
+import Galeria from './components/Galeria/Galeria';
 
 
 function App() {
@@ -15,7 +16,9 @@ function App() {
         <Sobre />
         {/* <Equipe /> */}
         <Servicos />  
+        <Galeria />
         <Contato />
+        <section></section>
       </div>
     </div>
   );

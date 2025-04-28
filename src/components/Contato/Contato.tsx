@@ -24,7 +24,7 @@ const Contato: React.FC = () => {
             <li className={styles.item}><a href="#sobre" className={styles.link}>Sobre nós</a></li>
             <li className={styles.item}><a href="#diferencial" className={styles.link}>Nosso diferencial</a></li>
             <li className={styles.item}><a href="#servicos" className={styles.link}>Nossos serviços</a></li>
-            {/* <li className={styles.item}><a href="#projetos" className={styles.link}>Nossos projetos</a></li> */}
+            <li className={styles.item}><a href="#exemplos" className={styles.link}>Nossos projetos</a></li>
           </ul>
         </div>
 

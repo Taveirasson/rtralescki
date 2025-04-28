@@ -24,18 +24,25 @@ const Menu: React.FC = () => {
       if (ignoreObserver.current) return;
   
       let currentSectionId = "";
-  
+      const centerY = window.innerHeight / 2;
+
       sections.forEach(section => {
         const rect = section.getBoundingClientRect();
-        if (rect.top <= window.innerHeight / 2) {
+        if (rect.top <= centerY && rect.bottom >= centerY) {
           currentSectionId = section.getAttribute("id") || "";
         }
+
+
+        // if (rect.top <= window.innerHeight / 2) {
+        //   currentSectionId = section.getAttribute("id") || "";
+        // }
       });
   
       if (currentSectionId) {
         setActiveSection(currentSectionId);
       }
     };
+
     window.addEventListener("scroll", handleScroll);
     handleScroll();
   
@@ -66,7 +73,8 @@ const Menu: React.FC = () => {
           <button className={activeSection === "sobre" ? "active" : ""} onClick={() => scrollToSection("sobre")}>SOBRE</button>
           <button className={activeSection === "diferencial" ? "active" : ""} onClick={() => scrollToSection("diferencial")}>DIFERENCIAL</button>
           <button className={activeSection === "servicos" ? "active" : ""} onClick={() => scrollToSection("servicos")}>NOSSOS SERVIÇOS</button>
-          {/* <button className={activeSection === "contato" ? "active" : ""} onClick={() => scrollToSection("contato")}>CONTATO</button> */}
+          <button className={activeSection === "exemplos" ? "active" : ""} onClick={() => scrollToSection("exemplos")}>NOSSOS PROJETOS</button>
+        
         </div>
         <div className="contato" onClick={() => handleWhatsAppClick()} style={{ cursor: 'pointer' }}>
           <div className="whatsappIconWrapper">
@@ -74,7 +82,7 @@ const Menu: React.FC = () => {
           </div>
           <div className="textos">
             <span>Entre em contato</span>
-            <strong>(31) 99510-2050</strong>
+            <strong>(41) 99269-6534</strong>
           </div>
       </div>
       </nav>

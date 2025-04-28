@@ -74,14 +74,21 @@
 }
 
 .menu-logo {
-  height: 100px;
+  height: 95px;
   width: auto;
   cursor: pointer;
 }
 
+.menu-logo:hover {
+  transform: translateX(-5px);
+  transform: translateY(-5px);
+
+}
+
 .menu-buttons {
   display: flex;
-  gap: 70px;
+  /* max-width: 500px; */
+  gap: 20px;
   flex: 1;
   justify-content: center;
 }
@@ -91,13 +98,15 @@
   border: none;
   color: var(--cor-texto-claro);
   font-weight: bold;
-  font-size: 17px;
+  font-size: 16px;
   cursor: pointer;
   transition: color 0.3s ease, border-bottom 0.3s ease;
-  padding: 12px 25px;
+  padding: 12px 10px;
   white-space: nowrap;
   overflow: hidden;
   margin: 0 10px;
+  text-justify: auto;
+  /* width: 160px; */
 }
 
 .menu-buttons button:hover {
@@ -116,6 +125,11 @@
   display: flex;
   align-items: center;
   gap: 10px;
+  margin-right: 5%;
+}
+
+.contato:hover{
+  transform: translateY(-10px);
 }
 
 .whatsappIconWrapper {
@@ -147,5 +161,5 @@
 
 .textos strong {
   font-size: 18px;
-  color: #0B5C5A; /* Um verde mais escuro para o número */
+  color: #0B5C5A;
 }

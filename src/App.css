@@ -1,5 +1,5 @@
 body {
-  background-color: #fdfcfb;
+  background-color: #ccc;
 }
 
 html, body {
@@ -16,6 +16,29 @@ html, body {
   flex-direction: column; 
   padding-left: 5%;
   padding-right: 5%;
+}
+
+.divMain h1{
+  text-align: center;
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.divMain h1::after {
+  content: '';
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 100%;
+  height: 3px;
+  background-color: var(--cor-secundaria-clara);
 }
 
 :root {

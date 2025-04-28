@@ -1,5 +1,5 @@
 export const whatsappNumber = "5541992696534";
-export const defaultMessage = "Olá! Gostaria de mais informações sobre os serviços.";
+export const defaultMessage = "Olá! Eu venho do site Rtralescki e gostaria de informações.";
 
 export const handleWhatsAppClick = (
   number: string = whatsappNumber,
