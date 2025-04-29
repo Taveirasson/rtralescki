@@ -1,5 +1,6 @@
 import React from "react";
 import "./Galeria.css";
+import { publicSrc} from "../../utils/publicSrc";
 
 interface Projeto {
   imagem: string;
@@ -47,7 +48,7 @@ const Galeria: React.FC = () => {
         <div className="galeria-cards-wrapper" >
         {projetos.map((projeto, index) => (
             <div key={index} className="card-projeto">
-            <img src={projeto.imagem} alt={projeto.titulo} />
+            <img src={`${publicSrc}${projeto.imagem}`} alt={projeto.titulo} />
             <div className="info-card">
                 <h2>{projeto.titulo}</h2>
                 <p>{projeto.descricao}</p>
@@ -61,7 +62,7 @@ const Galeria: React.FC = () => {
           <div className="esteira-conteudo">
             {[...clintes, ...clintes].map((cliente, index) => (
               <div key={index} className="cliente-item">
-                <img src={cliente.src} alt={cliente.nome}></img>
+                <img src={`${publicSrc}${cliente.src}`} alt={cliente.nome}></img>
                 {/* {cliente.nome || 'Cliente ' + (index + 1)} */}
               </div>
             ))}

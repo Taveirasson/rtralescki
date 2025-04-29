@@ -1,6 +1,7 @@
 import React, { useEffect, useState, useRef } from "react";
 import './menu.css'
 import { handleWhatsAppClick } from "../../utils/whatsapp";
+import { publicSrc} from "../../utils/publicSrc";
 
 const Menu: React.FC = () => {
   const [isTop, setIsTop] = useState(true);
@@ -68,7 +69,7 @@ const Menu: React.FC = () => {
       </nav>
     
       <nav className={`menu-container`}>
-        <img className="menu-logo" src="/assets/Logo04.png" alt="Logo" onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })} />
+        <img className="menu-logo" src={`${publicSrc}/assets/Logo04.png`} alt="Logo" onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })} />
         <div className="menu-buttons">
           <button className={activeSection === "sobre" ? "active" : ""} onClick={() => scrollToSection("sobre")}>SOBRE</button>
           <button className={activeSection === "diferencial" ? "active" : ""} onClick={() => scrollToSection("diferencial")}>DIFERENCIAL</button>
@@ -78,7 +79,7 @@ const Menu: React.FC = () => {
         </div>
         <div className="contato" onClick={() => handleWhatsAppClick()} style={{ cursor: 'pointer' }}>
           <div className="whatsappIconWrapper">
-            <img src="/assets/whatsapp.svg" alt="WhatsApp" className="whatsappIcon" />
+            <img src={`${publicSrc}/assets/whatsapp.svg`} alt="WhatsApp" className="whatsappIcon" />
           </div>
           <div className="textos">
             <span>Entre em contato</span>

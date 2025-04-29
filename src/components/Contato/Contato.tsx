@@ -1,8 +1,9 @@
 import React from "react";
 import styles from "./Contato.module.css";
 import { handleWhatsAppClick } from "../../utils/whatsapp";
+import { publicSrc} from "../../utils/publicSrc";
 
-const logo = "assets/Logo02.png";
+const logo = `${publicSrc}/assets/Logo02.png`;
 const Contato: React.FC = () => {
   return (
     <footer id="contato" className={styles.footer}>

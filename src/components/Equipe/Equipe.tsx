@@ -1,6 +1,7 @@
 import React from "react";
 import './equipe.css';
 // import EquipeMembro from "./EquipeMembro";
+import { publicSrc} from "../../utils/publicSrc";
 
 
 const Equipe: React.FC = () => (
@@ -11,7 +12,7 @@ const Equipe: React.FC = () => (
     </div>
     <div className="segundoContainer">
       <div className="imagem">
-        <img src="/assets/panel.png" alt="Icon"></img>
+        <img src={`${publicSrc}/assets/panel.png`} alt="Icon"></img>
       </div>
       <div className="texto">
         <h2 className="titulo-com-linha">Engenheiro Civil</h2>
@@ -27,7 +28,7 @@ const Equipe: React.FC = () => (
 
     <div className="segundoContainer">
       <div className="imagem">
-        <img src="/assets/panel.png" alt="Icon"></img>
+        <img src={`${publicSrc}/assets/panel.png`} alt="Icon"></img>
       </div>
       <div className="texto">
         <h2 className="titulo-com-linha">Arquiteto</h2>
