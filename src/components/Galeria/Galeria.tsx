@@ -15,29 +15,29 @@ interface Fotos {
 
 const projetos: Projeto[] = [
   {
-    imagem: '/assets/projetos/projeto01.PNG',
+    imagem: '/assets/projetos/projeto01.png',
     titulo: 'Projeto estrutural',
     descricao: 'Projeto estrutural localizado no litoral do Paraná. Dimensionamento e detalhamento dos elementos contemplando memorial de cálculo e memorial descritivo.',
   },
   {
-    imagem: '/assets/projetos/projeto02.PNG',
+    imagem: '/assets/projetos/projeto02.png',
     titulo: 'Projeto bombeiro',
     descricao: 'Projeto para aprovação do Corpo de Bombeiros para Santa casa de Misericórdia - Ponta Grossa - PR. Projeto dimensionado, detalhado e aprovado.',
   },
   {
-    imagem: '/assets/projetos/projeto03.PNG',
+    imagem: '/assets/projetos/projeto03.png',
     titulo: 'Projeto hidrossanitário',
     descricao: 'Comércio de 700m². Projeto contemplou aprovação da Concessionária, detalhamento, dimensionamento e execução.',
   },
 ];
 
 const clintes: Fotos[] = [
- {nome: "nome01", src: "/assets/clientes/cliente01.PNG"}, 
- {nome: "nome02", src: "/assets/clientes/cliente02.PNG"}, 
- {nome: "nome03", src: "/assets/clientes/cliente03.PNG"}, 
- {nome: "nome04", src: "/assets/clientes/cliente04.PNG"}, 
- {nome: "nome05", src: "/assets/clientes/cliente05.PNG"}, 
- {nome: "nome06", src: "/assets/clientes/cliente06.PNG"}, 
+ {nome: "nome01", src: "/assets/clientes/cliente01.png"}, 
+ {nome: "nome02", src: "/assets/clientes/cliente02.png"}, 
+ {nome: "nome03", src: "/assets/clientes/cliente03.png"}, 
+ {nome: "nome04", src: "/assets/clientes/cliente04.png"}, 
+ {nome: "nome05", src: "/assets/clientes/cliente05.png"}, 
+ {nome: "nome06", src: "/assets/clientes/cliente06.png"}, 
 ]
 
 const Galeria: React.FC = () => {

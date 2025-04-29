@@ -33,7 +33,7 @@ const Sobre: React.FC = () => {
             `<strong>Missão:</strong> ${textos.missao}`,
             `<strong>Valores:</strong> ${textos.valores}`,
           ]}
-          imagemSrc={`${publicSrc}/assets/foto01.PNG`}
+          imagemSrc={`${publicSrc}/assets/foto01.png`}
           imagemAlt="Logo R Tralescki"
         />
       </section>
