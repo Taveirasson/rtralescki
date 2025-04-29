@@ -1,6 +1,7 @@
 import React from 'react';
 import SobreContent from './SobreContent';
 import DiferencialSection from './DiferencialSection';
+import { publicSrc } from '../../utils/publicSrc';
 
 const textos = {
   sobre: `A Rtralescki Arquitetrura e Engenharia é uma empresa experiente que está no mercado para atender seus clientes de maneira satisfatória, buscando sempre o custo/benefício com o máximo de qualidade nos serviços. Para isso constantemente investe em qualificação para uma melhoria contínua nos projetos. Desde 2021, temos trabalhado incansavelmente para agradar nossos clientes.`,
@@ -32,7 +33,7 @@ const Sobre: React.FC = () => {
             `<strong>Missão:</strong> ${textos.missao}`,
             `<strong>Valores:</strong> ${textos.valores}`,
           ]}
-          imagemSrc="/assets/foto01.png"
+          imagemSrc={`${publicSrc}/assets/foto01.png`}
           imagemAlt="Logo R Tralescki"
         />
       </section>

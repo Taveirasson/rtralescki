@@ -1,6 +1,5 @@
 import React from 'react';
 import styles from './ParagrafoComImagem.module.css';
-import { publicSrc} from "../../utils/publicSrc";
 
 interface Props {
   titulo: string;
@@ -20,7 +19,7 @@ const ParagrafoComImagem: React.FC<Props> = ({ titulo, paragrafos, imagemSrc, im
         ))}
       </div>
       <div className={styles.sobreImagem}>
-        <img src={`${publicSrc}${imagemSrc}`} alt={imagemAlt} />
+        <img src={imagemSrc} alt={imagemAlt} />
       </div>
     </div>
   );
