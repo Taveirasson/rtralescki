@@ -12,7 +12,7 @@ function App() {
   return (
     <div className="App">
       <Menu />
-      <div style={{ paddingTop: '200px' }}>
+      <div>
         <Sobre />
         {/* <Equipe /> */}
         <Servicos />  

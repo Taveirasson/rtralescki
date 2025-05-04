@@ -1,24 +1,23 @@
 import React from 'react';
-import styles from './ParagrafoComImagem.module.css';
 
 interface Props {
   titulo: string;
   paragrafos: string[];
   imagemSrc: string;
   imagemAlt: string;
-  conteudoDireita?: boolean;
+  // conteudoDireita?: boolean;
 }
 
-const ParagrafoComImagem: React.FC<Props> = ({ titulo, paragrafos, imagemSrc, imagemAlt, conteudoDireita = false }) => {
+const ParagrafoComImagem: React.FC<Props> = ({ titulo, paragrafos, imagemSrc, imagemAlt}) => {
   return (
-    <div className={`${styles.sobreContainer} ${conteudoDireita ? styles.conteudoDireita : styles.conteudoEsquerda}`}>
-      <div className={styles.sobreTexto}>
-        {titulo && <h2>{titulo}</h2>}
+    <div className='section'>
+      <div className='section-texto fundo'>
+        {titulo && <h1>{titulo}</h1>}
         {paragrafos.map((texto, index) => (
           <p key={index} dangerouslySetInnerHTML={{ __html: texto }} />
         ))}
       </div>
-      <div className={styles.sobreImagem}>
+      <div className='section-imagem'>
         <img src={imagemSrc} alt={imagemAlt} />
       </div>
     </div>

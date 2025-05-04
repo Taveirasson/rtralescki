@@ -163,3 +163,61 @@
   font-size: 18px;
   color: #0B5C5A;
 }
+
+
+/* ...estilos existentes... */
+
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    z-index: 1100;
+  }
+
+  .menu-buttons {
+    display: flex;
+    gap: 20px;
+    flex: 1;
+    justify-content: center;
+    transition: none; /* Para telas grandes, sem animação */
+  }
+  
+  @media (max-width: 958px) {
+    .menu-top {
+      min-width: unset;
+    }
+  
+    .menu-toggle {
+      display: block;
+    }
+  
+    .menu-buttons {
+      position: absolute;
+      top: 80px;
+      left: 0;
+      width: 100%;
+      background-color: var(--cor-fundo-claro);
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+  
+      max-height: 0;
+      overflow: hidden;
+      padding: 0;
+      transition: max-height 0.4s ease, padding 0.4s ease;
+    }
+  
+    .menu-buttons.show {
+      max-height: 300px; /* Ajuste conforme a altura necessária */
+      padding: 20px 0;
+    }
+  
+    .contato {
+      display: none;
+    }
+  
+    .menu-container {
+      padding: 10px 20px;
+    }
+  }

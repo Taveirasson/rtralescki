@@ -1,5 +1,5 @@
 import React from "react";
-import styles from './Servico.module.css';
+import './Servico.css';
 import Card from "../Paragrafos/Card";
 
 const servicos = [
@@ -31,13 +31,12 @@ const servicos = [
 
 const Servicos: React.FC = () => {
   return(
-    <section id="servicos" className="section">
-      <br /><br /><br /><br />
-      <div className="divMain">
-        <div className={styles.title}>
+    <section id="servicos">
+      <div className="section">
+        <div className="section-texto">
           <h1>Nossos Serviços</h1>
         </div>
-        <div className={styles.servicoContainer}>
+        <div className="section-grid ">
             {servicos.map((servico, index) => (
                   <Card key={index} title={servico.titulo} texto={servico.descricao} />
             ))} 

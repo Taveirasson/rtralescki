@@ -22,9 +22,8 @@ const textos = {
 
 const Sobre: React.FC = () => {
   return (
-    <div className='divMain'>
+    <div className='primeiroDepoisdoMenu'>
       <section id="sobre">
-        <br /><br />
         <SobreContent
           titulo="R Tralescki Arquitetura e Engenharia"
           paragrafos={[
@@ -38,7 +37,6 @@ const Sobre: React.FC = () => {
         />
       </section>
       <section id='diferencial'>
-        <br /><br /><br /><br />
         <DiferencialSection title="Nosso Diferencial" textos={textos.diferencial} />
     </section>
 </div>

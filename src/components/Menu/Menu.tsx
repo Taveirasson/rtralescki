@@ -2,10 +2,13 @@ import React, { useEffect, useState, useRef } from "react";
 import './menu.css'
 import { handleWhatsAppClick } from "../../utils/whatsapp";
 import { publicSrc} from "../../utils/publicSrc";
+import { Menu as MenuIcon, X as CloseIcon } from "lucide-react";
+
 
 const Menu: React.FC = () => {
   const [isTop, setIsTop] = useState(true);
   const [activeSection, setActiveSection] = useState<string>("");
+  const [menuAberto, setMenuAberto] = useState(false);
   const ignoreObserver = useRef(false);
 
   useEffect(() => {
@@ -32,11 +35,6 @@ const Menu: React.FC = () => {
         if (rect.top <= centerY && rect.bottom >= centerY) {
           currentSectionId = section.getAttribute("id") || "";
         }
-
-
-        // if (rect.top <= window.innerHeight / 2) {
-        //   currentSectionId = section.getAttribute("id") || "";
-        // }
       });
   
       if (currentSectionId) {
@@ -55,6 +53,7 @@ const Menu: React.FC = () => {
     if (section) {
       section.scrollIntoView({behavior: "smooth" });
       setActiveSection(id); 
+      setMenuAberto(false);
       ignoreObserver.current = true;
       setTimeout(() => {
         ignoreObserver.current = false;
@@ -70,7 +69,14 @@ const Menu: React.FC = () => {
     
       <nav className={`menu-container`}>
         <img className="menu-logo" src={`${publicSrc}/assets/Logo04.png`} alt="Logo" onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })} />
-        <div className="menu-buttons">
+        <button className="menu-toggle" onClick={() => setMenuAberto(!menuAberto)}>
+          {menuAberto ? (
+            <CloseIcon size={32} color="var(--cor-texto-claro)" />
+          ) : (
+            <MenuIcon size={32} color="var(--cor-texto-claro)" />
+          )}
+        </button>
+        <div className={`menu-buttons ${menuAberto ? 'show' : ''}`}>
           <button className={activeSection === "sobre" ? "active" : ""} onClick={() => scrollToSection("sobre")}>SOBRE</button>
           <button className={activeSection === "diferencial" ? "active" : ""} onClick={() => scrollToSection("diferencial")}>DIFERENCIAL</button>
           <button className={activeSection === "servicos" ? "active" : ""} onClick={() => scrollToSection("servicos")}>NOSSOS SERVIÇOS</button>

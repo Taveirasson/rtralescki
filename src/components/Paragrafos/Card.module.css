@@ -16,8 +16,12 @@
     line-height: 1.8;
   }
 
+  .title{
+    text-align: center;
+  }
+
+
   body.modo-escuro .card {
     background-color: var(--cor-fundo-escuro);
     color: var(--cor-texto-escuro);
   }
-  

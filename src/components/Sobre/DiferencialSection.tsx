@@ -1,7 +1,7 @@
 import React from 'react';
 // import ParagrafoSimples from '../Paragrafos/ParagrafoSimples';
 import Card from '../Paragrafos/Card';
-import styles from './sobre.module.css';
+// import styles from './sobre.module.css';
 
 interface Props {
   textos: string[];
@@ -10,11 +10,11 @@ interface Props {
 
 const DiferencialSection: React.FC<Props> = ({ textos, title }) => {
   return (
-    <div className='divMain'>
-      <div className={styles.title}>
+    <div className='section'>
+      <div className="section-texto">
         <h1>{title}</h1>
       </div>
-      <div className={styles.diferencialContainer}>
+      <div className="section-grid">
         {textos.map((texto, index) => (
           <Card key={index} title='' texto={texto} />
         ))}

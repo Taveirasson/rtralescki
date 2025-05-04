@@ -43,8 +43,10 @@ const clintes: Fotos[] = [
 const Galeria: React.FC = () => {
   return (
     <section id="exemplos" > 
-    <div className="divMain" >     
+    <div className="section" >     
+      <div className="section-texto">
         <h1>Nossos projetos</h1>
+      </div>
         <div className="galeria-cards-wrapper" >
         {projetos.map((projeto, index) => (
             <div key={index} className="card-projeto">
@@ -57,7 +59,9 @@ const Galeria: React.FC = () => {
         ))}
         </div>
         <br /><br />
-        <h1>Alguns de nossos clientes</h1>
+        <div className="section-texto">
+          <h1>Alguns de nossos clientes</h1>
+        </div>
         <div className="esteira">
           <div className="esteira-conteudo">
             {[...clintes, ...clintes].map((cliente, index) => (

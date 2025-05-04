@@ -12,14 +12,14 @@ interface Props {
 const SobreContent: React.FC<Props> = ({ titulo, paragrafos, imagemSrc, imagemAlt }) => {
   return (
     <div>
-      <div className={styles.sobreContent}>
+      <div>
         {/* <h1 className={styles.title}>{titulo}</h1> */}
         <ParagrafoComImagem
           titulo= {titulo}
           paragrafos={paragrafos}
           imagemSrc={imagemSrc}
           imagemAlt={imagemAlt}
-          conteudoDireita={false}
+          // conteudoDireita={false}
         />
       </div>
     </div>
