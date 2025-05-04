@@ -1,4 +1,5 @@
 import React from 'react';
+import './ParagrafoComImagem.css'
 
 interface Props {
   titulo: string;

@@ -183,7 +183,7 @@
     transition: none; /* Para telas grandes, sem animação */
   }
   
-  @media (max-width: 950px) {
+  @media (max-width: 1250px) {
     .menu-top {
       min-width: unset;
     }

@@ -13,6 +13,7 @@
     "@types/react": "^19.1.0",
     "@types/react-dom": "^19.1.1",
     "bootstrap": "^5.3.5",
+    "lucide-react": "^0.507.0",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
     "react-scripts": "5.0.1",
@@ -44,5 +45,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^6.3.0"
   }
 }

@@ -149,7 +149,7 @@ body.modo-escuro .section-imagem img {
 
 
 
-@media (max-width: 950px) {
+@media (max-width: 1250px) {
   .section {
     flex-direction: column;
     align-items: center;
