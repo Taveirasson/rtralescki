@@ -60,11 +60,10 @@
 
 .esteira-conteudo {
   display: flex;
-  /* flex-direction: row; */
+  flex-direction: row;
   gap: 10px;
-  width: max-content;
-  animation: deslizar 40s linear infinite;
-  /* white-space: nowrap;  */
+  animation: deslizar 60s linear infinite;
+  white-space: nowrap; 
 }
 
 @keyframes deslizar {
@@ -72,7 +71,7 @@
     transform: translateX(0%);
   }
   to {
-    transform: translateX(-50%);
+    transform: translateX(-33.33%);
   }
 }
 
@@ -82,7 +81,7 @@
   align-items: center;
   justify-content: center;
   width: 200px;
-  height: 100%;
+  height: 90%;
   font-size: 1.2rem;
   color: #0B5C5A;
   background-color: white;
@@ -124,11 +123,18 @@
   background: linear-gradient(to left, #f9f9f9, transparent);
 }
 
+.section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
-@media (max-width: 720px) {
+@media (max-width: 950px) {
   .galeria-cards-wrapper {
     gap: 1rem;
     padding: 0rem 0rem 0rem 0rem;
+    position: relative;
+
   }
 
   .card-projeto {

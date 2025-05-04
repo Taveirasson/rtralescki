@@ -58,13 +58,15 @@ const Galeria: React.FC = () => {
             </div>
         ))}
         </div>
+      </div>
+      <div className="section">
         <br /><br />
         <div className="section-texto">
           <h1>Alguns de nossos clientes</h1>
         </div>
         <div className="esteira">
           <div className="esteira-conteudo">
-            {[...clintes, ...clintes].map((cliente, index) => (
+            {[...clintes, ...clintes, ...clintes].map((cliente, index) => (
               <div key={index} className="cliente-item">
                 <img src={`${publicSrc}${cliente.src}`} alt={cliente.nome}></img>
                 {/* {cliente.nome || 'Cliente ' + (index + 1)} */}

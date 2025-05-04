@@ -11,7 +11,7 @@
 }
 
 
-@media (max-width: 720px) {
+@media (max-width: 950px) {
     .section-grid{
       display: flex;
       /* grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); */
