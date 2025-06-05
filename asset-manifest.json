@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/rtralescki/static/css/main.6d6c7953.css",
-    "main.js": "/rtralescki/static/js/main.4ba85950.js",
+    "main.js": "/rtralescki/static/js/main.e2e2a350.js",
     "static/js/453.e8e22c3f.chunk.js": "/rtralescki/static/js/453.e8e22c3f.chunk.js",
     "static/media/largePanel.png": "/rtralescki/static/media/largePanel.a0f8e2d20b7e80b90bb7.png",
     "index.html": "/rtralescki/index.html",
     "main.6d6c7953.css.map": "/rtralescki/static/css/main.6d6c7953.css.map",
-    "main.4ba85950.js.map": "/rtralescki/static/js/main.4ba85950.js.map",
+    "main.e2e2a350.js.map": "/rtralescki/static/js/main.e2e2a350.js.map",
     "453.e8e22c3f.chunk.js.map": "/rtralescki/static/js/453.e8e22c3f.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.6d6c7953.css",
-    "static/js/main.4ba85950.js"
+    "static/js/main.e2e2a350.js"
   ]
 }
