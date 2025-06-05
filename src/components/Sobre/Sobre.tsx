@@ -4,7 +4,7 @@ import DiferencialSection from './DiferencialSection';
 import { publicSrc } from '../../utils/publicSrc';
 
 const textos = {
-  sobre: `A Rtralescki Arquitetrura e Engenharia é uma empresa experiente que está no mercado para atender seus clientes de maneira satisfatória, buscando sempre o custo/benefício com o máximo de qualidade nos serviços. Para isso constantemente investe em qualificação para uma melhoria contínua nos projetos. Desde 2021, temos trabalhado incansavelmente para agradar nossos clientes.`,
+  sobre: `A Rtralescki Arquitetrura e Engenharia é uma empresa experiente que está no mercado para atender seus clientes de maneira satisfatória, buscando sempre o custo/benefício com o máximo de qualidade nos serviços. Para isso constantemente investe em qualificação para uma melhoria contínua nos projetos. Desde 2015, temos trabalhado incansavelmente para agradar nossos clientes.`,
 
   objetivo: `Ser uma empresa de projetos referência na metodologia BIM, reconhecida no mercado nacional buscando objetivos traçados e proporcionando as inovadoras.`,
 

@@ -26,6 +26,14 @@ const servicos = [
   {
     titulo: "Projeto de Elementos de Subestrações e Usinas Fotovotáicas",
     descricao: "Desenvolvimento de projetos civis e estruturais para a implantação de subestações elétricas e usinas de energia solar fotovoltaica, considerando eficiência, durabilidade e normas regulamentadoras."
+  },
+  {
+    titulo: "Reforma",
+    descricao: "Execução de reformas em edificações existentes, incluindo adaptações funcionais, estéticas e estruturais, com foco em modernização, segurança e atendimento às normas técnicas e regulamentações vigentes."
+  },
+  {
+    titulo: "Execução de Obra",
+    descricao: "Realização de obras civis desde a fundação até a finalização, com controle técnico, gerenciamento de recursos e cumprimento de prazos, garantindo qualidade, eficiência e conformidade com os projetos e legislações aplicáveis."
   }
 ];
 
