@@ -1,11 +1,10 @@
 import React from 'react';
 import './App.css';
-import Menu from './components/Menu/Menu';
-import Sobre from './components/Sobre/Sobre';
-// import Equipe from './components/Equipe/Equipe';
-import Contato from './components/Contato/Contato';
-import Servicos from './components/Servicos/Servicos';
-import Galeria from './components/Galeria/Galeria';
+import Menu from './pages/Menu/Menu';
+import Sobre from './pages/Sobre/Sobre';
+import Contato from './pages/Contato/Contato';
+import Servicos from './pages/Servicos/Servicos';
+import Galeria from './pages/Galeria/Galeria';
 
 
 function App() {

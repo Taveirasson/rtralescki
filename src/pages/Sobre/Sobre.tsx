@@ -17,7 +17,7 @@ const textos = {
     `Todos os nossos projetos e execuções de serviços na área da Engenharia, seguem rigorosamente as Normas Técnicas Brasileiras da ABNT e normas Internacionais IEC.`,
     `Com constantes buscas no aprimoramento dos processos de qualidade, segurança e preservação do meio ambiente, buscamos satisfazer o cliente ao agregar valor diferenciado nos serviços prestados.`,
     `Utilizamos softwares registrados e atualizados. Utilizamos metodologia BIM; Trabalhamos a nível nacional.`
-  ]
+  ],
 };
 
 const Sobre: React.FC = () => {
