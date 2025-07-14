@@ -5,6 +5,7 @@ import Sobre from './pages/Sobre/Sobre';
 import Contato from './pages/Contato/Contato';
 import Servicos from './pages/Servicos/Servicos';
 import Galeria from './pages/Galeria/Galeria';
+import Home from './pages/Home/Home';
 
 
 function App() {
@@ -12,6 +13,7 @@ function App() {
     <div className="App">
       <Menu />
       <div>
+        <Home />
         <Sobre />
         {/* <Equipe /> */}
         <Servicos />  

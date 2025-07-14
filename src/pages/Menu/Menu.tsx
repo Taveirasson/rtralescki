@@ -64,8 +64,8 @@ const Menu: React.FC = () => {
   return (
     <>
     <div className={`menu-wrapper ${isTop ? 'at-top' : 'scrolled'}`}>
-      <nav className={`menu-top`}>
-      </nav>
+      {/* <nav className={`menu-top`}>
+      </nav> */}
     
       <nav className={`menu-container`}>
         <img className="menu-logo" src={`${publicSrc}/assets/Logo04.png`} alt="Logo" onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })} />

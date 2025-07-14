@@ -1,0 +1,20 @@
+.saibaMais {
+    background: none;
+    border: none;
+    color: #D9822B;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    user-select: none;
+    transition: transform 0.2s ease-in-out;
+  }
+  
+.saibaMais:hover {
+    transform: scale(1.1);
+    color: #bf742a;
+  }

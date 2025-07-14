@@ -1,0 +1,6 @@
+.titulo-sublinhado {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    text-decoration: underline;
+    text-underline-offset: 4px;
+  }
