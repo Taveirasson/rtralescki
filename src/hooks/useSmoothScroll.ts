@@ -2,7 +2,10 @@ const useScrollToSection = () => {
     const scrollToSection = (id: string) => {
       const element = document.getElementById(id);
       if (element) {
-        element.scrollIntoView({ behavior: 'smooth' });
+        const offSet = -50;
+        const y = element.getBoundingClientRect().top + window.pageYOffset + offSet;
+
+        window.scrollTo({top: y, behavior: 'smooth'});
       }
     };
   

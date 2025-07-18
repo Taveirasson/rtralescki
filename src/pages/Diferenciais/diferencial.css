@@ -1,0 +1,33 @@
+.diferenciais-container {
+    max-width: 1100px;
+    margin: 3rem auto;
+    padding: 0 1.5rem;
+  }
+  
+  .diferenciais-titulo {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    font-weight: bold;
+    position: relative;
+  }
+  
+  .diferenciais-titulo::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 3px;
+    background-color: goldenrod;
+    margin: 0.5rem auto 0;
+  }
+  
+  .diferenciais-texto {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #222;
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+  }
+  

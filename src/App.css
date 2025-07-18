@@ -26,6 +26,13 @@ body.modo-escuro {
   color: var(--cor-texto-escuro);
 }
 
+.title {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  text-decoration-color: #c3a752;
+}
 
 /* Reutilizaveis */
 

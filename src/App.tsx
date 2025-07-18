@@ -6,6 +6,7 @@ import Contato from './pages/Contato/Contato';
 import Servicos from './pages/Servicos/Servicos';
 import Galeria from './pages/Galeria/Galeria';
 import Home from './pages/Home/Home';
+import Diferencial from './pages/Diferenciais/Diferencial';
 
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
       <div>
         <Home />
         <Sobre />
+        <Diferencial />
         {/* <Equipe /> */}
         <Servicos />  
         <Galeria />
