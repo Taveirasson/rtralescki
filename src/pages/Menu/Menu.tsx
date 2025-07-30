@@ -54,7 +54,15 @@ const Menu: React.FC = () => {
   const scrollToSection = (id: string) => {
     const section = document.getElementById(id);
     if (section) {
-      section.scrollIntoView({behavior: "smooth" });
+      const offset = -20;
+      const top = section.getBoundingClientRect().top + window.pageYOffset + offset;
+      
+      window.scrollTo({
+        top,
+        behavior: "smooth"
+      });
+
+      // section.scrollIntoView({behavior: "smooth" });
       setActiveSection(id); 
       setMenuAberto(false);
       ignoreObserver.current = true;
@@ -80,7 +88,7 @@ const Menu: React.FC = () => {
           )}
         </button>
         <div className={`menu-buttons ${menuAberto ? 'show' : ''}`}>
-          <button className={activeSection === "sobre" ? "active" : ""} onClick={() => scrollTest("sobre")}>SOBRE</button>
+          <button className={activeSection === "sobre" ? "active" : ""} onClick={() => scrollToSection("sobre")}>SOBRE</button>
           <button className={activeSection === "diferencial" ? "active" : ""} onClick={() => scrollToSection("diferencial")}>DIFERENCIAL</button>
           <button className={activeSection === "servicos" ? "active" : ""} onClick={() => scrollToSection("servicos")}>NOSSOS SERVIÇOS</button>
           <button className={activeSection === "exemplos" ? "active" : ""} onClick={() => scrollToSection("exemplos")}>NOSSOS PROJETOS</button>

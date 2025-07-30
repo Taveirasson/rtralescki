@@ -13,7 +13,7 @@ function App() {
   return (
     <div className="App">
       <Menu />
-      <div>
+      <div className='sections'>
         <Home />
         <Sobre />
         <Diferencial />

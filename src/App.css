@@ -26,6 +26,10 @@ body.modo-escuro {
   color: var(--cor-texto-escuro);
 }
 
+.sections {
+  margin-top: 4rem;
+}
+
 .title {
   font-size: 2rem;
   margin-bottom: 1rem;
