@@ -8,6 +8,7 @@ Site desenvolvida em **React + TypeScript** para a empresa **RTralescki Arquitet
 
 O projeto foi organizado com estrutura modular por responsabilidade:
 
+```plaintext
 src/
 ├── assets
 ├── components
@@ -15,6 +16,7 @@ src/
 ├── pages
 ├── styles
 └── utils
+```
 
 ---
 
