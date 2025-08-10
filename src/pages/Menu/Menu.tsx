@@ -3,6 +3,7 @@ import './menu.css'
 import { handleWhatsAppClick } from "../../utils/whatsapp";
 import { publicSrc} from "../../utils/publicSrc";
 import { Menu as MenuIcon, X as CloseIcon } from "lucide-react";
+import useScrollToSection from '../../hooks/useSmoothScroll';
 
 
 const Menu: React.FC = () => {
@@ -10,6 +11,8 @@ const Menu: React.FC = () => {
   const [activeSection, setActiveSection] = useState<string>("");
   const [menuAberto, setMenuAberto] = useState(false);
   const ignoreObserver = useRef(false);
+
+  const scrollTest = useScrollToSection();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -51,7 +54,15 @@ const Menu: React.FC = () => {
   const scrollToSection = (id: string) => {
     const section = document.getElementById(id);
     if (section) {
-      section.scrollIntoView({behavior: "smooth" });
+      const offset = -20;
+      const top = section.getBoundingClientRect().top + window.pageYOffset + offset;
+      
+      window.scrollTo({
+        top,
+        behavior: "smooth"
+      });
+
+      // section.scrollIntoView({behavior: "smooth" });
       setActiveSection(id); 
       setMenuAberto(false);
       ignoreObserver.current = true;
@@ -64,8 +75,8 @@ const Menu: React.FC = () => {
   return (
     <>
     <div className={`menu-wrapper ${isTop ? 'at-top' : 'scrolled'}`}>
-      <nav className={`menu-top`}>
-      </nav>
+      {/* <nav className={`menu-top`}>
+      </nav> */}
     
       <nav className={`menu-container`}>
         <img className="menu-logo" src={`${publicSrc}/assets/Logo04.png`} alt="Logo" onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })} />
