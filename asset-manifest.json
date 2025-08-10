@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/rtralescki/static/css/main.341202cb.css",
-    "main.js": "/rtralescki/static/js/main.ece8e6e1.js",
+    "main.css": "/rtralescki/static/css/main.7667b3a7.css",
+    "main.js": "/rtralescki/static/js/main.7c6923c9.js",
     "static/media/imagem02.webp": "/rtralescki/static/media/imagem02.b26f09ce848ca0fdd87d.webp",
     "index.html": "/rtralescki/index.html",
     "static/media/target-svgrepo-com.svg": "/rtralescki/static/media/target-svgrepo-com.5ceb44ac3ec7b5d2f5531a7ded118ccd.svg",
@@ -11,11 +11,11 @@
     "static/media/leaf-svgrepo-com.svg": "/rtralescki/static/media/leaf-svgrepo-com.21b4c8d651bcf5c458cc044d36b75b41.svg",
     "static/media/chart-bar-svgrepo-com.svg": "/rtralescki/static/media/chart-bar-svgrepo-com.93bf40746d7b1d5f637e5571ec61111e.svg",
     "static/media/desktop-svgrepo-com.svg": "/rtralescki/static/media/desktop-svgrepo-com.ddb9371be830dadd9c046b11abc4029f.svg",
-    "main.341202cb.css.map": "/rtralescki/static/css/main.341202cb.css.map",
-    "main.ece8e6e1.js.map": "/rtralescki/static/js/main.ece8e6e1.js.map"
+    "main.7667b3a7.css.map": "/rtralescki/static/css/main.7667b3a7.css.map",
+    "main.7c6923c9.js.map": "/rtralescki/static/js/main.7c6923c9.js.map"
   },
   "entrypoints": [
-    "static/css/main.341202cb.css",
-    "static/js/main.ece8e6e1.js"
+    "static/css/main.7667b3a7.css",
+    "static/js/main.7c6923c9.js"
   ]
 }
