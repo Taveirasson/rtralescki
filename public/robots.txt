@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://taveirasson.github.io/sitemap.xml
