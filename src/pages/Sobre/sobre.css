@@ -1,23 +1,5 @@
-.sobre-section {
-    padding: 4rem 1.1rem 0rem 1.1rem;
-    background-color: white;
-    text-align: center;
-  }
   
-  .sobre-container {
-    max-width: 1000px;
-    margin: 0 auto;
-  }
-  
-  .sobre-descricao {
-    margin-bottom: 3rem;
-    margin-top: 3rem;
-    font-size: 1.1rem;
-    line-height: 1.6;
-    text-align: justify;
-  }
-  
-  .sobre-cards {
+ .sobre-cards {
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
@@ -29,37 +11,3 @@
       justify-content: space-between;
     }
   }
-  
-  .sobre-card {
-    background-color: white;
-    padding: 2rem;
-    border-radius: 12px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
-    flex: 1;
-    text-align: center;
-  }
-
-  .sobre-card:hover {
-    transform: translateY(-10px) scale(1.1);
-    transition: transform 0.3s ease; 
-
-  }
-
-  .sobre-card .subtitle {
-    font-size: 1.2rem;
-    text-align: center;
-    font-weight: 500;
-    text-decoration: underline;
-    text-underline-offset: 4px;
-    text-decoration-color: #c3a752;
-  }
-
-  .sobre-card p {
-    text-align: justify;
-  }
-  
-  .sobre-icon {
-    width: 40px;
-    margin-bottom: 1rem;
-  }
-  

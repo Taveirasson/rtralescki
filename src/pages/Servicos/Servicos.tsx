@@ -1,6 +1,6 @@
 import React from "react";
 import './Servico.css';
-import Card from "../Paragrafos/Card";
+import Card from "../../components/Cards/Card";
 
 const servicos = [
   {
@@ -39,14 +39,13 @@ const servicos = [
 
 const Servicos: React.FC = () => {
   return(
-    <section id="servicos">
-      <div className="section">
-        <div className="section-texto">
-          <h1>Nossos Serviços</h1>
-        </div>
-        <div className="section-grid ">
+    <section id="servicos" className="section">
+      <div className="container">
+        <h1 className='title'>Nosso Serviços</h1>
+
+        <div className="grid-cards">
             {servicos.map((servico, index) => (
-                  <Card key={index} title={servico.titulo} texto={servico.descricao} />
+              <Card key={index} title={servico.titulo} description={servico.descricao} />
             ))} 
         </div>
       </div>

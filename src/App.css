@@ -9,25 +9,11 @@
   --cor-borda-escura: #333;
 }
 
-html, body {
-  overflow-x: hidden;
-  background-color: var(--cor-borda-clara);
-}
-
 body {
   background-color: var(--cor-fundo-claro);
   color: var(--cor-texto-claro);
   font-family: sans-serif;
   line-height: 1.6;
-}
-
-body.modo-escuro {
-  background-color: var(--cor-fundo-escuro);
-  color: var(--cor-texto-escuro);
-}
-
-.sections {
-  margin-top: 4rem;
 }
 
 .title {
@@ -38,202 +24,20 @@ body.modo-escuro {
   text-decoration-color: #c3a752;
 }
 
-/* Reutilizaveis */
-
 .section {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-between;
-  gap: 3rem;
-  padding: 5rem 5rem 5rem 5rem;
-}
-
-.section-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  flex-direction: column;
-  justify-items: center;
-  width: 100%;
-  gap: 2rem;
-}
-
-
-
-.fundo {
-  /* color: var(--cor-texto-claro); */
-  padding: 1%;
-  line-height: 1.8;
-  /* text-align: justify; */
-  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
-  /* background-color: var(--cor-fundo-claro); */
-  border-radius: 30px; 
-}
-
-.section-texto {
-  flex: 1;
-  min-width: 280px;
-  font-size: 1.2rem;
-  padding: 3%;
+  padding: 2rem 1.1rem 5rem 1.1rem;
   text-align: center;
 }
 
-.section-texto strong {
-  /* padding: 1%; */
-  /* font-size: 2rem; */
-  /* margin-bottom: 1rem; */
-  /* color: var(--cor-secundaria-clara); */
-  text-align: center;
-  display: inline-block;
-  /* justify-content: center; */
-  /* align-items: center; */
-  position: relative;
-  /* font-size: 32px; */
-  font-weight: bold;
-  /* margin-bottom: 0px; */
-}
-.section-texto strong::after{
-  content: '';
-  /* justify-content: center; */
-  /* align-items: center; */
-  position: absolute;
-  left: 0;
-  bottom: -1px;
-  width: 100%;
-  height: 2px;
-  background-color: var(--cor-secundaria-clara);
+.container {
+  max-width: 85%;
+  margin: 0 auto;
 }
 
-.section-texto h1 {
-  text-align: center;
-  display: inline-block;
-  /* justify-content: center; */
-  /* align-items: center; */
-  position: relative;
-  font-size: 32px;
-  font-weight: bold;
-  /* margin-bottom: 0px; */
-}
-
-.section-texto h1::after{
-  content: '';
-  /* justify-content: center; */
-  /* align-items: center; */
-  position: absolute;
-  left: 0;
-  bottom: -5px;
-  width: 100%;
-  height: 3px;
-  background-color: var(--cor-secundaria-clara);
-}
-
-.section-texto p {
-  /* margin-bottom: 1rem; */
+.description{
+  margin-bottom: 3rem;
+  margin-top: 3rem;
+  font-size: 1.1rem;
+  line-height: 1.6;
   text-align: justify;
-
 }
-
-.section-imagem {
-  flex: 1;
-  min-width: 280px;
-  max-width: 40%;
-
-  /* max-height: 200px; */
-}
-
-.section-imagem img {
-  width: 100%;
-  height: auto;
-  border-radius: 30px;
-  border: 2px solid var(--cor-fundo-claro);
-  display: block;
-}
-
-body.modo-escuro .section-imagem img {
-  border-color: var(--cor-borda-escura);
-}
-
-.primeiroDepoisdoMenu{
-  margin-top: 10rem;
-}
-
-
-
-
-@media (max-width: 1250px) {
-  .section {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    padding: 5rem 1rem 1rem 1rem;
-    gap: 1rem;
-
-  }
-
-  .section-grid{
-    display: flex;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    flex-direction: column;
-    justify-items: center;
-    width: 100%;
-    gap: 2rem;
-  }
-
-  
-  .section-texto {
-    flex: 1;
-    /* min-width: 280px; */
-    /* text-align: center; */
-    font-size: 1rem;
-    padding: 1%;
-  }
-
-  .section-texto h1 {
-    font-size: 1.5rem;
-  }
-  
-  .section-imagem {
-    flex: 1;
-    min-width: 280px;
-    max-width: 40%;
-    display: flex;
-    justify-content: center; /* Centraliza a imagem horizontalmente */
-    align-items: center;
-  }
-}
-
-/* 
-.divMain {
-  display: flex; 
-  max-width: 100%;
-  align-self: center;
-  align-items: center;
-  justify-content: center;
-  justify-items: center;
-  flex-direction: column; 
-  padding-left: 5%;
-  padding-right: 5%;
-}
-
-.App h1{
-  text-align: center;
-  display: inline-block;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  font-size: 32px;
-  font-weight: bold;
-  margin-bottom: 20px;
-}
-
-.App h1::after {
-  content: '';
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  left: 0;
-  bottom: -5px;
-  width: 100%;
-  height: 3px;
-  background-color: var(--cor-secundaria-clara);
-} */

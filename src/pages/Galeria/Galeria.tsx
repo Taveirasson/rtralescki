@@ -2,34 +2,11 @@ import React from "react";
 import "./Galeria.css";
 import { publicSrc} from "../../utils/publicSrc";
 
-interface Projeto {
-  imagem: string;
-  titulo: string;
-  descricao: string;
-}
 
 interface Fotos {
   nome: string;
   src: string;
 }
-
-const projetos: Projeto[] = [
-  {
-    imagem: '/assets/projetos/projeto01.png',
-    titulo: 'Projeto estrutural',
-    descricao: 'Projeto estrutural localizado no litoral do Paraná. Dimensionamento e detalhamento dos elementos contemplando memorial de cálculo e memorial descritivo.',
-  },
-  {
-    imagem: '/assets/projetos/projeto02.png',
-    titulo: 'Projeto bombeiro',
-    descricao: 'Projeto para aprovação do Corpo de Bombeiros para Santa casa de Misericórdia - Ponta Grossa - PR. Projeto dimensionado, detalhado e aprovado.',
-  },
-  {
-    imagem: '/assets/projetos/projeto03.png',
-    titulo: 'Projeto hidrossanitário',
-    descricao: 'Comércio de 700m². Projeto contemplou aprovação da Concessionária, detalhamento, dimensionamento e execução.',
-  },
-];
 
 const clintes: Fotos[] = [
  {nome: "nome01", src: "/assets/clientes/cliente01.png"}, 
@@ -42,28 +19,9 @@ const clintes: Fotos[] = [
 
 const Galeria: React.FC = () => {
   return (
-    <section id="exemplos" > 
-    <div className="section" >     
-      <div className="section-texto">
-        <h1>Nossos projetos</h1>
-      </div>
-        <div className="galeria-cards-wrapper" >
-        {projetos.map((projeto, index) => (
-            <div key={index} className="card-projeto">
-            <img src={`${publicSrc}${projeto.imagem}`} alt={projeto.titulo} />
-            <div className="info-card">
-                <h2>{projeto.titulo}</h2>
-                <p>{projeto.descricao}</p>
-            </div>
-            </div>
-        ))}
-        </div>
-      </div>
-      <div className="section">
-        <br /><br />
-        <div className="section-texto">
-          <h1>Alguns de nossos clientes</h1>
-        </div>
+    <section id="exemplos" className="section"> 
+      <div className="container">
+        <h1 className='title'>Alguns de nossos clientes</h1>
         <div className="esteira">
           <div className="esteira-conteudo">
             {[...clintes, ...clintes, ...clintes].map((cliente, index) => (
@@ -73,8 +31,8 @@ const Galeria: React.FC = () => {
               </div>
             ))}
           </div>
+          </div>
       </div>
-    </div>
     </section>
   );
 };

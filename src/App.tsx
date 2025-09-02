@@ -1,12 +1,13 @@
 import React from 'react';
 import './App.css';
-import Menu from './pages/Menu/Menu';
-import Sobre from './pages/Sobre/Sobre';
-import Contato from './pages/Contato/Contato';
-import Servicos from './pages/Servicos/Servicos';
-import Galeria from './pages/Galeria/Galeria';
-import Home from './pages/Home/Home';
-import Diferencial from './pages/Diferenciais/Diferencial';
+import Menu from './Pages/Menu/Menu';
+import Sobre from './Pages/Sobre/Sobre';
+import Contato from './Pages/Contato/Contato';
+import Servicos from './Pages/Servicos/Servicos';
+import Galeria from './Pages/Galeria/Galeria';
+import Home from './Pages/Home/Home';
+import Diferencial from './Pages/Diferenciais/Diferencial';
+import Projetos from './Pages/Projetos/Projetos';
 
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
         <Diferencial />
         {/* <Equipe /> */}
         <Servicos />  
+        <Projetos />
         <Galeria />
         <Contato />
         <section></section>
