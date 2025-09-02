@@ -1,5 +1,5 @@
 import React from "react";
-import "./Galeria.css";
+import "./Clientes.css";
 import { publicSrc} from "../../utils/publicSrc";
 
 
@@ -17,7 +17,7 @@ const clintes: Fotos[] = [
  {nome: "nome06", src: "/assets/clientes/cliente06.png"}, 
 ]
 
-const Galeria: React.FC = () => {
+const Clientes: React.FC = () => {
   return (
     <section id="exemplos" className="section"> 
       <div className="container">
@@ -37,4 +37,4 @@ const Galeria: React.FC = () => {
   );
 };
 
-export default Galeria;
+export default Clientes;

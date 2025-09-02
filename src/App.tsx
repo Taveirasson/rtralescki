@@ -4,7 +4,7 @@ import Menu from './Pages/Menu/Menu';
 import Sobre from './Pages/Sobre/Sobre';
 import Contato from './Pages/Contato/Contato';
 import Servicos from './Pages/Servicos/Servicos';
-import Galeria from './Pages/Galeria/Galeria';
+import Clientes from './Pages/Clientes/Clientes';
 import Home from './Pages/Home/Home';
 import Diferencial from './Pages/Diferenciais/Diferencial';
 import Projetos from './Pages/Projetos/Projetos';
@@ -21,9 +21,8 @@ function App() {
         {/* <Equipe /> */}
         <Servicos />  
         <Projetos />
-        <Galeria />
+        <Clientes />
         <Contato />
-        <section></section>
       </div>
     </div>
   );
