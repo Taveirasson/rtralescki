@@ -19,7 +19,7 @@ const clintes: Fotos[] = [
 
 const Clientes: React.FC = () => {
   return (
-    <section id="exemplos" className="section"> 
+    <section id="clientes" className="section"> 
       <div className="container">
         <h1 className='title'>Alguns de nossos clientes</h1>
         <div className="esteira">

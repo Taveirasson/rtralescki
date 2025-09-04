@@ -8,10 +8,12 @@ const Card: React.FC<CardProps> = ({ title, src, imageSize, description }) => {
   return (
     <div className="card">
         {src && <img src={src} alt={title}
-                  className={`card-icon ${imageSize === "large" ? "large-image" : ""}`}
+                  className={imageSize === "large" ? "large-image" : "card-icon"}
         />}
-        <p className='subtitle'>{title}</p>
-        <p>{description}</p>
+        <div className='content'>
+          <p className='subtitle'>{title}</p>
+          <p>{description}</p>
+        </div>
     </div>
   );
 };

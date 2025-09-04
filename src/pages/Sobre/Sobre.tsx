@@ -33,7 +33,7 @@ const Sobre: React.FC = () => {
           A Rtralescki Arquitetura e Engenharia é uma empresa experiente que está no mercado para atender seus clientes de maneira satisfatória, buscando sempre o custo benefício com o máximo de qualidade nos serviços.
           Para isso constantemente investimos em qualificação para uma melhoria contínua nos projetos. Desde 2015, temos trabalhado incansavelmente para agradar nossos clientes.
         </p>
-        <div className="sobre-cards">
+        <div className="card-grid">
           {quemSomos.map((el, index) => (
                 <Card key={index} title={el.titulo} src={el.imagem} description={el.descricao} />
             ))}

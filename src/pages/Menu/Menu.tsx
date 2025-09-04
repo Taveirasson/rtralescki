@@ -88,7 +88,7 @@ const Menu: React.FC = () => {
           <button className={activeSection === "sobre" ? "active" : ""} onClick={() => scrollToSection("sobre")}>SOBRE</button>
           <button className={activeSection === "diferencial" ? "active" : ""} onClick={() => scrollToSection("diferencial")}>DIFERENCIAL</button>
           <button className={activeSection === "servicos" ? "active" : ""} onClick={() => scrollToSection("servicos")}>NOSSOS SERVIÇOS</button>
-          <button className={activeSection === "projetos" ? "active" : ""} onClick={() => scrollToSection("projetos")}>NOSSOS PROJETOS</button>
+          <button className={activeSection === "projetos" || activeSection === "clientes" ? "active" : ""} onClick={() => scrollToSection("projetos")}>NOSSOS PROJETOS</button>
         
         </div>
         <div className="contato" onClick={() => handleWhatsAppClick()} style={{ cursor: 'pointer' }}>

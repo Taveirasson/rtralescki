@@ -37,7 +37,7 @@ const Diferencial = () => {
 
       <h1 className='title'>Nosso Diferencial</h1>
 
-        <div className="sobre-cards">
+        <div className="card-grid">
           {diferenciais.map((diferenciais, index) => (
             <Card key={index} title={diferenciais.titulo} src={diferenciais.imagem} description={diferenciais.descricao} />
           ))}

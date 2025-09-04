@@ -29,13 +29,15 @@ const projetos: ProjetoUtil[] = [
 
 const Projetos: React.FC = () => {
   return (
-    <section id="projetos" className="section" > 
+    <section id="projetos" className="section" >
+      <div className="container">
         <h1 className='title'>Nossos Projetos</h1>
-        <div className="galeria-cards-wrapper" >
+        <div className="card-grid" >
             {projetos.map((projeto, index) => (
                 <Card key={index} title={projeto.titulo} src={projeto.imagem} imageSize={projeto.imageSize} description={projeto.descricao} />
             ))}
         </div>
+      </div>
     </section>
   );
 };
