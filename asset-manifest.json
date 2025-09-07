@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.54b94995.css",
+    "main.css": "/static/css/main.813c819a.css",
     "main.js": "/static/js/main.eba00d83.js",
     "static/media/imagem02.webp": "/static/media/imagem02.b26f09ce848ca0fdd87d.webp",
     "static/media/icons8-whatsapp.svg": "/static/media/icons8-whatsapp.9d24f696a3ba2d78c30dd6d58315ba5f.svg",
@@ -18,11 +18,11 @@
     "static/media/chart-bar-svgrepo-com.svg": "/static/media/chart-bar-svgrepo-com.93bf40746d7b1d5f637e5571ec61111e.svg",
     "static/media/desktop-svgrepo-com.svg": "/static/media/desktop-svgrepo-com.ddb9371be830dadd9c046b11abc4029f.svg",
     "static/media/envelope-svgrepo-com.svg": "/static/media/envelope-svgrepo-com.07234b36b6d4c2d7da093b3400a084b9.svg",
-    "main.54b94995.css.map": "/static/css/main.54b94995.css.map",
+    "main.813c819a.css.map": "/static/css/main.813c819a.css.map",
     "main.eba00d83.js.map": "/static/js/main.eba00d83.js.map"
   },
   "entrypoints": [
-    "static/css/main.54b94995.css",
+    "static/css/main.813c819a.css",
     "static/js/main.eba00d83.js"
   ]
 }
