@@ -41,9 +41,9 @@ const Servicos: React.FC = () => {
   return(
     <section id="servicos" className="section">
       <div className="container">
-        <h1 className='title'>Nosso Serviços</h1>
+        <h1 className='title'>Nossos Serviços</h1>
 
-        <div className="grid-cards">
+        <div className="card-grid">
             {servicos.map((servico, index) => (
               <Card key={index} title={servico.titulo} description={servico.descricao} />
             ))} 

@@ -1,11 +1,9 @@
 import React from 'react';
 import './Home.css';
-import SaibaMaisButton from '../../components/Button/SaibaMais';
-import useScrollToSection from '../../hooks/useSmoothScroll';
+import SaibaMaisButton from '../../components/Buttons/SaibaMais';
+import scrollToSection from '../../utils/scrollToSection';
 
 const Home: React.FC = () => {
-  const scrollToSection = useScrollToSection();
-
   return (
     <div className="Home">
       <div className="background-image" />

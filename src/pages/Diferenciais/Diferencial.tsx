@@ -1,5 +1,5 @@
 import React from 'react';
-import './diferencial.css';
+import './Diferencial.css';
 import shield from '../../assets/shield-check-svgrepo-com.svg'
 import screwDriver from '../../assets/screwdriver-svgrepo-com.svg'
 import leaf from '../../assets/leaf-svgrepo-com.svg'
@@ -26,7 +26,7 @@ const diferenciais: ProjetoUtil[] = [
   {
     imagem: desktop,
     titulo: "Inovação e Tecnologia",
-    descricao: "Utilizamos softwares registrados e atualizados. Utilizamos metodologia BIM. Trabalhamos a nível nacional."
+    descricao: "Utilizamos softwares registrados e atualizados, metodologia BIM e trabalhamos a nível nacional."
   }
 ]
 

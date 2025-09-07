@@ -12,7 +12,7 @@ const Card: React.FC<CardProps> = ({ title, src, imageSize, description }) => {
         />}
         <div className='content'>
           <p className='subtitle'>{title}</p>
-          <p>{description}</p>
+          <p className='description'>{description}</p>
         </div>
     </div>
   );

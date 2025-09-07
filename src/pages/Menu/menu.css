@@ -7,66 +7,16 @@
   transition: transform 0.4s ease;
 }
 
-/* .menu-wrapper.at-top {
-  transform: translateY(0);
-}
-
-.menu-wrapper.scrolled {
-  transform: translateY(-130px);
-} */
-
-/* .menu-top {
-  position: relative;
-  width: 100%;
-  min-width: 958px;
-  height: 130px;
-  max-height: 130px;
-  overflow: hidden;
-  object-position: 0% 75%;
-  background-color: var(--cor-secundaria-clara);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: opacity 0.3s ease, transform 0.4s ease;
-  z-index: -1;
-  pointer-events: none;
-  background-image: url(../../../public/assets/largePanel.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-} */
-
-/* .menu-top.hidden {
-  opacity: 0;
-  transform: translateY(-100%);
-  pointer-events: none;
-}
-
-.menu-top.visible {
-  opacity: 1;
-  transform: translateY(0);
-} */
-
-/* .nav-logo {
-  position: absolute;
-  transform: translateX(-50%);
-  width: 100%;
-  max-width: 958px;
-  height: auto;
-  pointer-events: none;
-  user-select: none;
-} */
-
 .menu-container {
   position: relative;
   left: 0;
   width: 100%;
-  height: 80px;
+  height: 6rem;
   background-color: var(--cor-fundo-claro);
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 10px 40px;
+  padding: 1rem 2rem;
   z-index: 1000;
   box-sizing: border-box;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
@@ -74,7 +24,7 @@
 }
 
 .menu-logo {
-  height: 95px;
+  height: 7rem;
   width: auto;
   cursor: pointer;
 }
@@ -87,8 +37,7 @@
 
 .menu-buttons {
   display: flex;
-  /* max-width: 500px; */
-  gap: 20px;
+  gap: 0rem;
   flex: 1;
   justify-content: center;
 }
@@ -98,15 +47,14 @@
   border: none;
   color: var(--cor-texto-claro);
   font-weight: bold;
-  font-size: 16px;
+  font-size: 1rem;
   cursor: pointer;
   transition: color 0.3s ease, border-bottom 0.3s ease;
-  padding: 12px 10px;
+  padding: 1rem 1rem;
   white-space: nowrap;
   overflow: hidden;
-  margin: 0 10px;
+  margin: 0 1rem;
   text-justify: auto;
-  /* width: 160px; */
 }
 
 .menu-buttons button:hover {
@@ -115,57 +63,7 @@
 
 .menu-buttons button.active {
   border-bottom: 5px solid var(--cor-secundaria-clara);
-  /* color: #E6C976; */
-  /* transition: color 0.3s ease, border-bottom 0.3s ease; */
 }
-
-
-
-.contato {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  margin-right: 5%;
-}
-
-.contato:hover{
-  transform: translateY(-10px);
-}
-
-.whatsappIconWrapper {
-  width: 50px;
-  height: 50px;
-  background-color: #25D366; /* Verde WhatsApp */
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.whatsappIcon {
-  width: 24px;
-  height: 24px;
-  fill: white;
-}
-
-.textos {
-  display: flex;
-  flex-direction: column;
-  color: var(--cor-texto-claro);
-  font-size: 14px;
-}
-
-.textos span {
-  font-size: 14px;
-}
-
-.textos strong {
-  font-size: 18px;
-  color: #0B5C5A;
-}
-
-
-/* ...estilos existentes... */
 
 .menu-toggle {
     display: none;
@@ -174,33 +72,21 @@
     cursor: pointer;
     z-index: 1100;
   }
-
-  .menu-buttons {
-    display: flex;
-    gap: 20px;
-    flex: 1;
-    justify-content: center;
-    transition: none; /* Para telas grandes, sem animação */
-  }
   
-  @media (max-width: 1250px) {
-    /* .menu-top {
-      min-width: unset;
-    } */
-  
+  @media (max-width: 1265px) {
     .menu-toggle {
       display: block;
     }
   
     .menu-buttons {
       position: absolute;
-      top: 80px;
+      top: 5.9rem;
       left: 0;
       width: 100%;
       background-color: var(--cor-fundo-claro);
       flex-direction: column;
       align-items: center;
-      gap: 10px;
+      gap: 1rem;
   
       max-height: 0;
       overflow: hidden;
@@ -209,8 +95,8 @@
     }
   
     .menu-buttons.show {
-      max-height: 300px; /* Ajuste conforme a altura necessária */
-      padding: 20px 0;
+      max-height: 300px;
+      padding: 1rem 0;
     }
   
     .contato {
@@ -218,6 +104,6 @@
     }
   
     .menu-container {
-      padding: 10px 20px;
+      padding: 1rem 2rem;
     }
   }

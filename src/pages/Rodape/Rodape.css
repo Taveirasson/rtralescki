@@ -57,6 +57,8 @@
   
   .item {
     margin-bottom: 0.75rem;
+    cursor: pointer;
+    
   }
   
   .link {
@@ -76,34 +78,5 @@
     text-align: center;
     font-size: 0.85rem;
     color: var(--cor-secundaria-clara);
-  }
-  
-
-  .whatsappButton {
-    position: fixed;
-    bottom: 40px;
-    right: 40px;
-    width: 70px;
-    height: 70px;
-    background-color: #25D366;
-    border: none;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
-    cursor: pointer;
-    z-index: 1000;
-    transition: background-color 0.3s;
-  }
-  
-  .whatsappButton:hover {
-    background-color: #1ebe57;
-  }
-  
-  .whatsappIcon {
-    fill: white;
-    width: 40px;
-    height: 40px;
   }
   
