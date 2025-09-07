@@ -77,6 +77,10 @@
     .menu-toggle {
       display: block;
     }
+
+    .menu-logo {
+      height: 6rem;
+    }
   
     .menu-buttons {
       position: absolute;
