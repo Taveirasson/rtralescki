@@ -1,21 +1,28 @@
 {
   "files": {
-    "main.css": "/rtralescki/static/css/main.20fded3c.css",
-    "main.js": "/rtralescki/static/js/main.7e4c7b3b.js",
+    "main.css": "/rtralescki/static/css/main.7095b884.css",
+    "main.js": "/rtralescki/static/js/main.ec964285.js",
     "static/media/imagem02.webp": "/rtralescki/static/media/imagem02.b26f09ce848ca0fdd87d.webp",
+    "static/media/icons8-whatsapp.svg": "/rtralescki/static/media/icons8-whatsapp.9d24f696a3ba2d78c30dd6d58315ba5f.svg",
+    "static/media/whatsapp.svg": "/rtralescki/static/media/whatsapp.456ead7c14ec26c4af4c68123581830c.svg",
     "index.html": "/rtralescki/index.html",
     "static/media/target-svgrepo-com.svg": "/rtralescki/static/media/target-svgrepo-com.5ceb44ac3ec7b5d2f5531a7ded118ccd.svg",
+    "static/media/location-svgrepo-com.svg": "/rtralescki/static/media/location-svgrepo-com.1224d908de44472b45c2476301164068.svg",
+    "static/media/icons8-instagram.svg": "/rtralescki/static/media/icons8-instagram.44b1ba28ed8c2a65569b1ef70a8cfdeb.svg",
     "static/media/shield-check-svgrepo-com.svg": "/rtralescki/static/media/shield-check-svgrepo-com.f0d76d683f837c3ac651bca6261634d8.svg",
+    "static/media/burger-menu-svgrepo-com.svg": "/rtralescki/static/media/burger-menu-svgrepo-com.fc12fbd678bea2ce4ec9524cbe12a170.svg",
+    "static/media/close-md-svgrepo-com.svg": "/rtralescki/static/media/close-md-svgrepo-com.ae8de706cb336e0579adee6a13a9046e.svg",
     "static/media/screwdriver-svgrepo-com.svg": "/rtralescki/static/media/screwdriver-svgrepo-com.7bae6ec564e2ded0bc064ae8def30aee.svg",
     "static/media/gem-svgrepo-com.svg": "/rtralescki/static/media/gem-svgrepo-com.f32b97a3c160bc050c5a232c808c9ad5.svg",
     "static/media/leaf-svgrepo-com.svg": "/rtralescki/static/media/leaf-svgrepo-com.21b4c8d651bcf5c458cc044d36b75b41.svg",
     "static/media/chart-bar-svgrepo-com.svg": "/rtralescki/static/media/chart-bar-svgrepo-com.93bf40746d7b1d5f637e5571ec61111e.svg",
     "static/media/desktop-svgrepo-com.svg": "/rtralescki/static/media/desktop-svgrepo-com.ddb9371be830dadd9c046b11abc4029f.svg",
-    "main.20fded3c.css.map": "/rtralescki/static/css/main.20fded3c.css.map",
-    "main.7e4c7b3b.js.map": "/rtralescki/static/js/main.7e4c7b3b.js.map"
+    "static/media/envelope-svgrepo-com.svg": "/rtralescki/static/media/envelope-svgrepo-com.07234b36b6d4c2d7da093b3400a084b9.svg",
+    "main.7095b884.css.map": "/rtralescki/static/css/main.7095b884.css.map",
+    "main.ec964285.js.map": "/rtralescki/static/js/main.ec964285.js.map"
   },
   "entrypoints": [
-    "static/css/main.20fded3c.css",
-    "static/js/main.7e4c7b3b.js"
+    "static/css/main.7095b884.css",
+    "static/js/main.ec964285.js"
   ]
 }
