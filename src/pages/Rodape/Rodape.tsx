@@ -1,11 +1,10 @@
 import React from "react";
 import "./Rodape.css";
 import { handleWhatsAppClick } from "../../utils/whatsapp";
-import { publicSrc} from "../../utils/publicSrc";
 import scrollToSection from "../../utils/scrollToSection";
 import { meusContatos } from "../../types";
 
-const logo = `${publicSrc}/assets/Logo02.png`;
+const logo = `/assets/Logo02.png`;
 
 const Rodape: React.FC = () => {
   return (

@@ -3,7 +3,7 @@ import './Sobre.css';
 import chartBar from '../../assets/chart-bar-svgrepo-com.svg';
 import targetIcon from '../../assets/target-svgrepo-com.svg';
 import gemIcon from '../../assets/gem-svgrepo-com.svg';
-import { ProjetoUtil } from '../../types';
+import type { ProjetoUtil } from '../../types';
 import Card from '../../components/Cards/Card';
 
 const quemSomos: ProjetoUtil[] = [

@@ -1,6 +1,5 @@
 import React, { useEffect, useState, useRef } from "react";
 import "./Menu.css";
-import { publicSrc } from "../../utils/publicSrc";
 import scrollToSection from "../../utils/scrollToSection";
 
 import closeIcon from '../../assets/close-md-svgrepo-com.svg';
@@ -57,7 +56,7 @@ const Menu: React.FC = () => {
       <nav className="menu-container">
         <img
           className="menu-logo"
-          src={`${publicSrc}/assets/Logo04.png`}
+          src={`/assets/Logo04.png`}
           alt="Logo"
           onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
         />

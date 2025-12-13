@@ -1,8 +1,6 @@
 import React from 'react';
 import './Card.css'
-import { CardProps } from '../../types';
-
-
+import type { CardProps } from '../../types';
 
 const Card: React.FC<CardProps> = ({ title, src, imageSize, description }) => {
   return (

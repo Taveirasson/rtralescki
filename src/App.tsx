@@ -1,4 +1,3 @@
-import React from 'react';
 import './App.css';
 import Menu from './Pages/Menu/Menu';
 import Sobre from './Pages/Sobre/Sobre';

@@ -1,7 +1,5 @@
 import React from "react";
 import "./Clientes.css";
-import { publicSrc} from "../../utils/publicSrc";
-
 
 interface Fotos {
   nome: string;
@@ -26,7 +24,7 @@ const Clientes: React.FC = () => {
           <div className="esteira-conteudo">
             {[...clintes, ...clintes, ...clintes].map((cliente, index) => (
               <div key={index} className="cliente-item">
-                <img src={`${publicSrc}${cliente.src}`} alt={cliente.nome}></img>
+                <img src={`${cliente.src}`} alt={cliente.nome}></img>
                 {/* {cliente.nome || 'Cliente ' + (index + 1)} */}
               </div>
             ))}
