@@ -4,7 +4,7 @@ import { handleWhatsAppClick } from "../../utils/whatsapp";
 import scrollToSection from "../../utils/scrollToSection";
 import { meusContatos } from "../../types";
 
-const logo = `/assets/Logo02.png`;
+const logo = `${import.meta.env.BASE_URL}assets/Logo02.png`;
 
 const Rodape: React.FC = () => {
   return (

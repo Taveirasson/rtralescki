@@ -6,19 +6,19 @@ import type { ProjetoUtil } from "../../types";
 
 const projetos: ProjetoUtil[] = [
   {
-    imagem:`/assets/projetos/projeto01.png`, 
+    imagem:`${import.meta.env.BASE_URL}assets/projetos/projeto01.png`,
     imageSize:'large',
     titulo: 'Projeto estrutural',
     descricao: 'Projeto estrutural localizado no litoral do Paraná. Dimensionamento e detalhamento dos elementos contemplando memorial de cálculo e memorial descritivo.',
   },
   {
-    imagem:`/assets/projetos/projeto02.png`,
+    imagem:`${import.meta.env.BASE_URL}assets/projetos/projeto02.png`,
     imageSize:'large',
     titulo: 'Projeto bombeiro',
     descricao: 'Projeto para aprovação do Corpo de Bombeiros para Santa casa de Misericórdia - Ponta Grossa - PR. Projeto dimensionado, detalhado e aprovado.',
   },
   {
-    imagem:`/assets/projetos/projeto03.png`,
+    imagem:`${import.meta.env.BASE_URL}assets/projetos/projeto03.png`,
     imageSize:'large',
     titulo: 'Projeto hidrossanitário',
     descricao: 'Comércio de 700m². Projeto contemplou aprovação da Concessionária, detalhamento, dimensionamento e execução.',

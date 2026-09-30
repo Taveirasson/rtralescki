@@ -7,12 +7,12 @@ interface Fotos {
 }
 
 const clintes: Fotos[] = [
- {nome: "nome01", src: "/assets/clientes/cliente01.png"}, 
- {nome: "nome02", src: "/assets/clientes/cliente02.png"}, 
- {nome: "nome03", src: "/assets/clientes/cliente03.png"}, 
- {nome: "nome04", src: "/assets/clientes/cliente04.png"}, 
- {nome: "nome05", src: "/assets/clientes/cliente05.png"}, 
- {nome: "nome06", src: "/assets/clientes/cliente06.png"}, 
+ {nome: "nome01", src: `${import.meta.env.BASE_URL}assets/clientes/cliente01.png`},
+ {nome: "nome02", src: `${import.meta.env.BASE_URL}assets/clientes/cliente02.png`},
+ {nome: "nome03", src: `${import.meta.env.BASE_URL}assets/clientes/cliente03.png`},
+ {nome: "nome04", src: `${import.meta.env.BASE_URL}assets/clientes/cliente04.png`},
+ {nome: "nome05", src: `${import.meta.env.BASE_URL}assets/clientes/cliente05.png`},
+ {nome: "nome06", src: `${import.meta.env.BASE_URL}assets/clientes/cliente06.png`},
 ]
 
 const Clientes: React.FC = () => {

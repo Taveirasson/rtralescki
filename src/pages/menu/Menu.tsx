@@ -56,7 +56,7 @@ const Menu: React.FC = () => {
       <nav className="menu-container">
         <img
           className="menu-logo"
-          src={`/assets/Logo04.png`}
+          src={`${import.meta.env.BASE_URL}assets/Logo04.png`}
           alt="Logo"
           onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
         />
