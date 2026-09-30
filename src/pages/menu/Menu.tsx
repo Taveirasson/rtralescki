@@ -1,5 +1,5 @@
 import React, { useEffect, useState, useRef } from "react";
-import "./Menu.css";
+import "./menu.css";
 import scrollToSection from "../../utils/scrollToSection";
 
 import closeIcon from '../../assets/close-md-svgrepo-com.svg';

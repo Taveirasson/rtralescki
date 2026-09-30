@@ -1,10 +1,10 @@
 import React from 'react';
-import './Sobre.css';
+import './sobre.css';
 import chartBar from '../../assets/chart-bar-svgrepo-com.svg';
 import targetIcon from '../../assets/target-svgrepo-com.svg';
 import gemIcon from '../../assets/gem-svgrepo-com.svg';
 import type { ProjetoUtil } from '../../types';
-import Card from '../../components/Cards/Card';
+import Card from '../../components/cards/Card';
 
 const quemSomos: ProjetoUtil[] = [
   {

@@ -1,6 +1,6 @@
 import React from "react";
 import "./Projetos.css";
-import Card from "../../components/Cards/Card";
+import Card from "../../components/cards/Card";
 import type { ProjetoUtil } from "../../types";
 
 

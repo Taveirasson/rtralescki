@@ -1,14 +1,14 @@
 import './App.css';
-import Menu from './Pages/Menu/Menu';
-import Sobre from './Pages/Sobre/Sobre';
-import Rodape from './Pages/Rodape/Rodape';
-import Servicos from './Pages/Servicos/Servicos';
-import Clientes from './Pages/Clientes/Clientes';
-import Home from './Pages/Home/Home';
-import Diferencial from './Pages/Diferenciais/Diferencial';
-import Projetos from './Pages/Projetos/Projetos';
-import Contatos from './Pages/Contatos/Contatos';
-import WhatsAppFloatingButton from './components/Buttons/WhatsAppFloatingButton';
+import Menu from './pages/menu/Menu';
+import Sobre from './pages/sobre/Sobre';
+import Rodape from './pages/rodape/Rodape';
+import Servicos from './pages/servicos/Servicos';
+import Clientes from './pages/clientes/Clientes';
+import Home from './pages/home/Home';
+import Diferencial from './pages/diferenciais/Diferencial';
+import Projetos from './pages/projetos/Projetos';
+import Contatos from './pages/contatos/Contatos';
+import WhatsAppFloatingButton from './components/buttons/WhatsAppFloatingButton';
 
 
 function App() {

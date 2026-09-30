@@ -1,10 +1,10 @@
-import './Diferencial.css';
+import './diferencial.css';
 import shield from '../../assets/shield-check-svgrepo-com.svg'
 import screwDriver from '../../assets/screwdriver-svgrepo-com.svg'
 import leaf from '../../assets/leaf-svgrepo-com.svg'
 import desktop from '../../assets/desktop-svgrepo-com.svg'
 import type { ProjetoUtil } from '../../types';
-import Card from '../../components/Cards/Card';
+import Card from '../../components/cards/Card';
 
 const diferenciais: ProjetoUtil[] = [
   {

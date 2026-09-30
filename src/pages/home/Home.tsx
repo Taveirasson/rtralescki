@@ -1,6 +1,6 @@
 import React from 'react';
 import './Home.css';
-import SaibaMaisButton from '../../components/Buttons/SaibaMais';
+import SaibaMaisButton from '../../components/buttons/SaibaMais';
 import scrollToSection from '../../utils/scrollToSection';
 
 const Home: React.FC = () => {

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import {handleWhatsAppForm, handleWhatsAppClick } from "../../utils/whatsapp";
 import "./Contatos.css";
-import IconComponent from "../../components/Icon/Icon";
+import IconComponent from "../../components/icon/Icon";
 
 import envelope from '../../assets/envelope-svgrepo-com.svg';
 import instagramIcon from '../../assets/icons8-instagram.svg';

@@ -1,6 +1,6 @@
 import React from "react";
 import './Servico.css';
-import Card from "../../components/Cards/Card";
+import Card from "../../components/cards/Card";
 
 const servicos = [
   {
